@@ -1,23 +1,19 @@
 import '../node_modules/bootstrap/scss/bootstrap.scss';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
+import { Provider } from 'react-redux'
+import configureStore from './store'
 
-class App extends React.Component{
-    constructor() {
-        super();
-    }
-    render() {
-        //JSX here!
-        return (
-          <div className="container">
-            <section className="jumbotron">
-              <h3 className="jumbotron-heading">Search Github Users</h3>
-            </section>
-          </div>
-        )
-    }
-};
+import App from './containers/app'
+
+const store = configureStore()
 
 const app = document.createElement('div');
 document.body.appendChild(app);
-ReactDOM.render(<App />, app);
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  app
+)
