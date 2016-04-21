@@ -1,0 +1,23 @@
+{
+  "name": "reactDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --profile --colors --hot",
+    "build": "webpack --progress --profile --colors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.16.0",
+    "webpack-dev-server": "^1.14.1",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
+    "sass-loader": "^3.2.0",
+    "node-sass": "^3.4.2",
+    "file-loader": "^0.8.5",
+    "url-loader": "^0.5.7"
+  }
+}
