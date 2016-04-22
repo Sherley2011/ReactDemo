@@ -1,23 +1,16 @@
-import { ADD_USER } from '../actions/user'
+import {Map, fromJS} from 'immutable'
+import { FETCH_USERS } from '../actions/user'
 
 const initialState = [
   {
-    name: 'Chenfay',
-    id: 0
+    name: 'Chenfay222'
   }
 ]
-let maxId=0
-export default function users(state = initialState, action) {
-  switch (action.type) {
-    case ADD_USER:
-      return [
-        {
-          id: maxId++,
-          name: action.name
-        },
-        ...state
-      ]
-    default:
-      return state
-  }
+export default (state = initialState, action) => {
+    switch (action.type) {
+    	case FETCH_USERS:
+    		return fromJS(action.payload)
+        default:
+            return state
+    }
 }

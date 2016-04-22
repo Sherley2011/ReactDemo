@@ -8,7 +8,7 @@ var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 
 module.exports = {
   entry: {
-    app: path.resolve(APP_PATH, 'index.jsx')
+    app: path.resolve(APP_PATH, 'index.js')
   },
   output: {
     path: BUILD_PATH,
@@ -23,12 +23,9 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.jsx?$/,
+      test: /\.js?$/,
       loader: 'babel',
-      include: APP_PATH,
-      query: {
-        presets: ['es2015', 'react']
-      }
+      include: APP_PATH
     }, {
       test: /\.scss$/,
       loaders: ['style', 'css', 'sass']

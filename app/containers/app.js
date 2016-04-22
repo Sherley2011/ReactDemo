@@ -11,6 +11,7 @@ class App extends React.Component{
     }
     render() {
         const { user, actions } = this.props
+
         return (
           <div className="container">
             <section className="jumbotron">
@@ -27,6 +28,7 @@ App.propTypes = {
 }
 
 function mapStateToProps(state) {
+  // console.log(state)
     return {user: state.user}
 }
 
