@@ -10,3 +10,8 @@ sudo npm install
 ```sh
 npm start
 ```
+
+## build
+```sh
+npm run build
+```
