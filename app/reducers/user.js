@@ -3,7 +3,7 @@ import { FETCH_USERS } from '../actions/user'
 
 const initialState = [
   {
-    name: 'Chenfay222'
+    name: 'ccccqqs'
   }
 ]
 export default (state = initialState, action) => {
