@@ -1,0 +1,25 @@
+{
+    "photo": [
+        {
+            "id":"p01",
+            "url": "http://localhost:8080/data/dailyTestBg/test5.jpg"
+        },{
+            "id":"p02",
+            "url": "http://localhost:8080/data/dailyTestBg/test1.jpg"
+        },{
+            "id":"p03",
+            "url": "http://localhost:8080/data/dailyTestBg/test3.jpg"
+        },{
+            "id":"p04",
+            "url": "http://localhost:8080/data/dailyTestBg/test5.jpg"
+        },{
+            "id":"p05",
+            "url": "http://localhost:8080/data/dailyTestBg/test6.jpg"
+        },{
+            "id":"p06",
+            "url": "http://localhost:8080/data/dailyTestBg/test7.jpg"
+        }
+
+    ],
+    "test":"test>>>>>"
+}

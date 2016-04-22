@@ -1,19 +1,23 @@
+// import 'babel-polyfill'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import routes from './routes/'
+import {createMyStore} from './store'
+import {reducer} from './reducers'
+import {Provider} from 'react-redux'
+import {Router, browserHistory} from 'react-router'
+import RootContainer from './containers/RootContainer'
+
 import '../node_modules/bootstrap/scss/bootstrap.scss';
-import React from 'react';
-import {render} from 'react-dom';
-import { Provider } from 'react-redux'
-import configureStore from './store'
 
-import App from './containers/app'
-
-const store = configureStore()
+const store = createMyStore(reducer)
 
 const app = document.createElement('div');
 document.body.appendChild(app);
 
-render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  app
+ReactDOM.render(
+	<Provider store={store}>
+		<RootContainer></RootContainer>
+	</Provider>,
+	app
 )

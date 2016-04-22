@@ -1,8 +1,12 @@
-import { combineReducers } from 'redux'
-import user from './user'
+import {Map} from 'immutable'
+import {combineReducers} from 'redux-immutablejs'
+import { routerStateReducer } from 'redux-router';
 
-const rootReducer = combineReducers({
-  user
+import share from './share'
+
+
+export const reducer = combineReducers({
+	route: routerStateReducer,
+	share
+
 })
-
-export default rootReducer

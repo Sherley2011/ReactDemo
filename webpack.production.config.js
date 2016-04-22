@@ -14,13 +14,6 @@ module.exports = {
     path: BUILD_PATH,
     filename: 'bundle.js'
   },
-  devtool: 'eval-source-map',
-  devServer: {
-    historyApiFallback: true,
-    hot: true,
-    inline: true,
-    progress: true
-  },
   module: {
     loaders: [{
       test: /\.js?$/,
