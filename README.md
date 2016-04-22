@@ -1,5 +1,4 @@
 # ReactDemo
-===========
 
 ## Install with npm and Bower
 ```sh
