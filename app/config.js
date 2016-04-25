@@ -4,7 +4,9 @@ const devConfig = {
 }
 
 // App config the for production environment.
-const proConfig = {}
+const proConfig = {
+	apiServerUrl: 'http://localhost:8080'
+}
 
 const config = devConfig
 export default config

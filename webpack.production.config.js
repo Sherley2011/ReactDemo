@@ -8,7 +8,8 @@ var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 
 module.exports = {
   entry: {
-    app: path.resolve(APP_PATH, 'index.js')
+    app: path.resolve(APP_PATH, 'index.js'),
+    vendors: ['react', 'react-dom']
   },
   output: {
     path: BUILD_PATH,
@@ -39,6 +40,10 @@ module.exports = {
 		}]
   },
   plugins: [
+    //这个使用uglifyJs压缩你的js代码
+    new webpack.optimize.UglifyJsPlugin({minimize: true}),
+    //把入口文件里面的数组打包成verdors.js
+    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
     new HtmlwebpackPlugin({
       title: 'React Demo'
     })
