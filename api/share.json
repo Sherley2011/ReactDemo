@@ -1,12 +1,12 @@
 {
   "user":{
     "name":"海宁魔法袋",
-    "avatar":"http://localhost:8080/avatar.png"
+    "avatar":"http://localhost:3000/api/avatar.png"
   },
   "photo":{
     "datetime":"2016-03-21T09:01:06.286Z",
     "address":"南京",
-    "url":"http://localhost:8080/photo.png",
+    "url":"http://localhost:3000/api/photo.png",
     "title":"在山与水之间",
     "description":"山是一本厚重的书，水是一卷灵动的诗，走山读水，荡胸生层云。我的眼前便浮现蔚蓝的天，一座峻巍的山，一条蜿蜒的溪，一泓碧透的湖。还未走进大山，纵目远眺，青峰列阵，层峦叠翠。一峰傲然耸立出云，群山如莲花簇拥，所有的苍翠向它聚拢、靠近。"
   }

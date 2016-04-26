@@ -2,10 +2,10 @@ import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import DocumentTitle from 'react-document-title'
-import ShareContent from '../components/share/ShareContent'
-import {requestSharePhotoInfo} from '../actions/share'
+import ShareContent from '../../components/share/ShareContent'
+import {requestSharePhotoInfo} from '../../actions/share'
 
-class SharePhotoComponent extends React.Component {
+class Webapp extends React.Component {
     constructor(props) {
         super(props)
     }
@@ -31,7 +31,7 @@ class SharePhotoComponent extends React.Component {
         }
 
         return (
-            <DocumentTitle title="分享">
+            <DocumentTitle title="发图说">
                 <div className="share">
 
 
@@ -59,4 +59,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export const SharePhotoContainer = connect(mapStateToProps, mapDispatchToProps)(SharePhotoComponent)
+export const WebappContainer = connect(mapStateToProps, mapDispatchToProps)(Webapp)
